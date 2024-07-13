@@ -1,0 +1,46 @@
+.img-container {
+    height: 400px;
+    width: 100%;
+
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.img23 {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.img4 {
+    height: calc((100% - 5px)/2);
+    width: 100%;
+}
+
+.fraction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* small device */
+@media screen and (max-width: 576px) {
+    .img23 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .fraction {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .img23 {
+        flex-direction: column;
+        height: auto;
+    }
+}
